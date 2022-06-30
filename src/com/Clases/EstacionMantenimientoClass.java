@@ -1,3 +1,5 @@
+package com.Clases;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -7,7 +9,7 @@
  *
  * @author Jony
  */
-public class EstacionDesabordajeClass {
+public class EstacionMantenimientoClass {
     private int id;
     private int cantidad;
 
