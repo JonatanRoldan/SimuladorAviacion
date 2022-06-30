@@ -9,5 +9,8 @@ public class ThreadAvion extends Thread{
         super(process);
     }
     public void run(){
+        
+    }
+    public void SolicitarAterizaje(){
     }
 }

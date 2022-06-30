@@ -4,9 +4,13 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Jony/Desktop/ProyectoSimulador/src/com/Home/LoadData.java</file>
+            <file>file:/C:/Users/Jony/Desktop/ProyectoSimulador/src/com/Clases/AvionesClass.java</file>
             <file>file:/C:/Users/Jony/Desktop/ProyectoSimulador/src/com/Home/ConfiguracionGeneral.java</file>
+            <file>file:/C:/Users/Jony/Desktop/ProyectoSimulador/src/com/Clases/EstacionDesabordajeClass.java</file>
             <file>file:/C:/Users/Jony/Desktop/ProyectoSimulador/src/com/Home/principal.java</file>
             <file>file:/C:/Users/Jony/Desktop/ProyectoSimulador/src/com/Threads/ThreadAvion.java</file>
+            <file>file:/C:/Users/Jony/Desktop/ProyectoSimulador/src/com/Clases/EstacionControlClass.java</file>
+            <file>file:/C:/Users/Jony/Desktop/ProyectoSimulador/src/com/Clases/PistasClass.java</file>
             <file>file:/C:/Users/Jony/Desktop/ProyectoSimulador/src/com/Clases/EstacionMantenimientoClass.java</file>
             <file>file:/C:/Users/Jony/Desktop/ProyectoSimulador/src/com/Threads/ThreadTiempo.java</file>
         </group>

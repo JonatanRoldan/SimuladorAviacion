@@ -18,14 +18,14 @@ import java.util.LinkedList;
 
 /**
  *
- * @author Jony
+ * @author Bryan
  */
 public class LoadData {
-    LinkedList<AvionesClass> aviones = new LinkedList<>();
-    LinkedList<EstacionControlClass> estacionControl = new LinkedList<>();
-    LinkedList<EstacionDesabordajeClass> estacionDesabordaje = new LinkedList<>();
-    LinkedList<EstacionMantenimientoClass> estacionMantenimiento = new LinkedList<>();
-    LinkedList<PistasClass> pistas = new LinkedList<>();
+    private LinkedList<AvionesClass> aviones = new LinkedList<>();
+    private LinkedList<EstacionControlClass> estacionControl = new LinkedList<>();
+    private LinkedList<EstacionDesabordajeClass> estacionDesabordaje = new LinkedList<>();
+    private LinkedList<EstacionMantenimientoClass> estacionMantenimiento = new LinkedList<>();
+    private LinkedList<PistasClass> pistas = new LinkedList<>();
     
     public void cargarAviones(File archivo){
         FileReader fr = null;
@@ -42,10 +42,10 @@ public class LoadData {
                     avion.setId(Integer.parseInt(arreglo[0]));
                     avion.setTipo(arreglo[1]);
                     avion.setCombustible(Integer.parseInt(arreglo[2]));
-                    aviones.add(avion);
+                    getAviones().add(avion);
                 }
             }
-            System.out.println(aviones);
+            System.out.println(getAviones());
                     
         }catch(Exception ex){
         }
@@ -64,34 +64,69 @@ public class LoadData {
                         EstacionDesabordajeClass desabordaje = new EstacionDesabordajeClass();
                         desabordaje.setId(Integer.parseInt(arreglo[0]));
                         desabordaje.setCantidad(Integer.parseInt(arreglo[1]));
-                        estacionDesabordaje.add(desabordaje);
+                        getEstacionDesabordaje().add(desabordaje);
                     }
                     if(Tipo=="control"){
                         EstacionControlClass control = new EstacionControlClass();
                         control.setId(Integer.parseInt(arreglo[0]));
                         control.setCantidad(Integer.parseInt(arreglo[1]));
-                        estacionControl.add(control);
+                        getEstacionControl().add(control);
                     }
                     if(Tipo=="mantenimieto"){
                         EstacionMantenimientoClass mantenimineto = new EstacionMantenimientoClass();
                         mantenimineto.setId(Integer.parseInt(arreglo[0]));
                         mantenimineto.setCantidad(Integer.parseInt(arreglo[1]));
-                        estacionMantenimiento.add(mantenimineto);
+                        getEstacionMantenimiento().add(mantenimineto);
                     }
                     if(Tipo=="pistas"){
                         PistasClass pista = new PistasClass();
                         pista.setId(Integer.parseInt(arreglo[0]));
                         pista.setCantidad(Integer.parseInt(arreglo[1]));
-                        pistas.add(pista);
+                        getPistas().add(pista);
                     }  
                 }
             }
-            System.out.println("abordaje"+ estacionDesabordaje);
-            System.out.println("mantenimiento"+ estacionMantenimiento);   
-            System.out.println("control"+ estacionControl);   
-            System.out.println("pistas"+ pistas);   
+            System.out.println("abordaje"+ getEstacionDesabordaje());
+            System.out.println("mantenimiento"+ getEstacionMantenimiento());   
+            System.out.println("control"+ getEstacionControl());   
+            System.out.println("pistas"+ getPistas());   
         }catch(Exception ex){
         }
+    }
+
+    /**
+     * @return the aviones
+     */
+    public LinkedList<AvionesClass> getAviones() {
+        return aviones;
+    }
+
+    /**
+     * @return the estacionControl
+     */
+    public LinkedList<EstacionControlClass> getEstacionControl() {
+        return estacionControl;
+    }
+
+    /**
+     * @return the estacionDesabordaje
+     */
+    public LinkedList<EstacionDesabordajeClass> getEstacionDesabordaje() {
+        return estacionDesabordaje;
+    }
+
+    /**
+     * @return the estacionMantenimiento
+     */
+    public LinkedList<EstacionMantenimientoClass> getEstacionMantenimiento() {
+        return estacionMantenimiento;
+    }
+
+    /**
+     * @return the pistas
+     */
+    public LinkedList<PistasClass> getPistas() {
+        return pistas;
     }
     
     

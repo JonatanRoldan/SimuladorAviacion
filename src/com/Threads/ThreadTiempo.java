@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Jony
+ * @author Bryan
  */
 public class ThreadTiempo extends Thread {
     public ThreadTiempo(String process){

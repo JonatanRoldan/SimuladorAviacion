@@ -7,7 +7,7 @@ package com.Clases;
 
 /**
  *
- * @author Jony
+ * @author Bryan
  */
 public class EstacionControlClass {
     private int id ;
