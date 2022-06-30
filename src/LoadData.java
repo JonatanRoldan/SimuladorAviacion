@@ -13,8 +13,8 @@ import java.util.LinkedList;
  *
  * @author Jony
  */
-public class loadData {
-    LinkedList<avionesClass> aviones = new LinkedList<>();
+public class LoadData {
+    LinkedList<AvionesClass> aviones = new LinkedList<>();
     LinkedList<estacionControlClass> estacionControl = new LinkedList<>();
     LinkedList<estacionDesabordajeClass> estacionDesabordaje = new LinkedList<>();
     LinkedList<estacionMantenimientoClass> estacionMantenimiento = new LinkedList<>();
@@ -31,7 +31,7 @@ public class loadData {
             while((linea = br.readLine())!=null){
                 String arreglo [] = linea.split(",");
                 if(arreglo.length==3){
-                    avionesClass avion = new avionesClass();
+                    AvionesClass avion = new AvionesClass();
                     avion.setId(Integer.parseInt(arreglo[0]));
                     avion.setTipo(arreglo[1]);
                     avion.setCombustible(Integer.parseInt(arreglo[2]));

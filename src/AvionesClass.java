@@ -7,7 +7,7 @@
  *
  * @author Jony
  */
-public class avionesClass {
+public class AvionesClass {
     private int id;
     private String tipo;
     private int combustible;

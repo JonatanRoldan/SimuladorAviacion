@@ -17,9 +17,10 @@ import javax.swing.filechooser.FileNameExtensionFilter;
  */
 public class principal extends javax.swing.JFrame {
 
-    loadData data= new loadData();
+    LoadData data;
     public principal() {
         initComponents();
+        data = ConfiguracionGeneral.getLoadData();
     }
 
     /**
