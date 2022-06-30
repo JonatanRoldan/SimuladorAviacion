@@ -7,7 +7,7 @@
  *
  * @author Jony
  */
-public class estacionDesabordajeClass {
+public class EstacionDesabordajeClass {
     private int id;
     private int cantidad;
 

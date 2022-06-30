@@ -7,7 +7,7 @@
  *
  * @author Jony
  */
-public class estacionControlClass {
+public class EstacionControlClass {
     private int id ;
     private int cantidad;
 

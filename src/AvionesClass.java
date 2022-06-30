@@ -5,12 +5,13 @@
 
 /**
  *
- * @author Jony
+ * @author Bryan
  */
 public class AvionesClass {
     private int id;
     private String tipo;
     private int combustible;
+    private String state;
     
 
     /**
@@ -54,4 +55,19 @@ public class AvionesClass {
     public void setCombustible(int combustible) {
         this.combustible = combustible;
     }
+
+    /**
+     * @return the state
+     */
+    public String getState() {
+        return state;
+    }
+
+    /**
+     * @param state the state to set
+     */
+    public void setState(String state) {
+        this.state = state;
+    }
+    
 }

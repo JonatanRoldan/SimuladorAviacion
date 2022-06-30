@@ -15,10 +15,10 @@ import java.util.LinkedList;
  */
 public class LoadData {
     LinkedList<AvionesClass> aviones = new LinkedList<>();
-    LinkedList<estacionControlClass> estacionControl = new LinkedList<>();
-    LinkedList<estacionDesabordajeClass> estacionDesabordaje = new LinkedList<>();
-    LinkedList<estacionMantenimientoClass> estacionMantenimiento = new LinkedList<>();
-    LinkedList<pistasClass> pistas = new LinkedList<>();
+    LinkedList<EstacionControlClass> estacionControl = new LinkedList<>();
+    LinkedList<EstacionDesabordajeClass> estacionDesabordaje = new LinkedList<>();
+    LinkedList<EstacionMantenimientoClass> estacionMantenimiento = new LinkedList<>();
+    LinkedList<PistasClass> pistas = new LinkedList<>();
     
     public void cargarAviones(File archivo){
         FileReader fr = null;
@@ -54,25 +54,25 @@ public class LoadData {
                 String arreglo [] = linea.split(",");
                 if(arreglo.length==2){
                     if(Tipo=="desabordaje"){
-                        estacionDesabordajeClass desabordaje = new estacionDesabordajeClass();
+                        EstacionDesabordajeClass desabordaje = new EstacionDesabordajeClass();
                         desabordaje.setId(Integer.parseInt(arreglo[0]));
                         desabordaje.setCantidad(Integer.parseInt(arreglo[1]));
                         estacionDesabordaje.add(desabordaje);
                     }
                     if(Tipo=="control"){
-                        estacionControlClass control = new estacionControlClass();
+                        EstacionControlClass control = new EstacionControlClass();
                         control.setId(Integer.parseInt(arreglo[0]));
                         control.setCantidad(Integer.parseInt(arreglo[1]));
                         estacionControl.add(control);
                     }
                     if(Tipo=="mantenimieto"){
-                        estacionMantenimientoClass mantenimineto = new estacionMantenimientoClass();
+                        EstacionMantenimientoClass mantenimineto = new EstacionMantenimientoClass();
                         mantenimineto.setId(Integer.parseInt(arreglo[0]));
                         mantenimineto.setCantidad(Integer.parseInt(arreglo[1]));
                         estacionMantenimiento.add(mantenimineto);
                     }
                     if(Tipo=="pistas"){
-                        pistasClass pista = new pistasClass();
+                        PistasClass pista = new PistasClass();
                         pista.setId(Integer.parseInt(arreglo[0]));
                         pista.setCantidad(Integer.parseInt(arreglo[1]));
                         pistas.add(pista);

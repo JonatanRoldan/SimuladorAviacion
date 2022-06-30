@@ -7,7 +7,7 @@
  *
  * @author Jony
  */
-public class pistasClass {
+public class PistasClass {
     private int id;
     private int cantidad;
 
